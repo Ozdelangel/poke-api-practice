@@ -2,6 +2,7 @@ const API_BASE_URL = 'https://pokeapi.co/api/v2/pokemon/';
 const PAGE_SIZE = 10;
 const pokemonNameContainer = document.getElementById('pokemon-container');
 
+pokemonNameContainer.addEventListener('scroll', handleScroll);
 fetchAndAppendPokemon();
 
 function fetchAndAppendPokemon(){
